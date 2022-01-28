@@ -21,30 +21,76 @@
     <header>
       <div class="logo">ThinkfulCupid</div>
       <nav>
+        
         <ul id="menu">
-          <li><a>Join</a></li>
-          <li><a>About</a></li>
-          <li><a>Download</a></li>
-          <li><a>Blog</a></li>
+         
+          <li><a href="#join">Join</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#download">Download</a></li>
+          <li><a href="#blog">Blog</a></li>
         </ul>
+      
       </nav>
     </header>
 
     <main>
       <!-- Join -->
       <section id="join">
+        <div>
         <img src="images/love.png" alt="ThinkfulCupid - love" />
         <!-- Add join form here -->
+          <main>
+            <h2> Find your perfect match</h2>
+              <form>
+                <div>
+                  <label for="user-email">Email:</label>
+                  <input 
+                      id="user-email" 
+                      type="text" 
+                      name="email"
+                  />
+                </div>
+                
+                <div>
+                  <label for="password">Create a password:</label>
+                  <input id="password" type="password" name="password" minlength="8" />
+                </div>
+
+                <div>
+                  <label for="name">Username:</label>
+                  <input
+                    id="name"
+                    type="text"
+                    name="name"
+                  />  
+                      </div>
+                <div>
+                  <label for="fonts">Am I a...</label>
+                  <select name="fonts" id="fonts" size="1">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="non-binary">Non-Binary</option>
+                    <option value="pefer-not-to-answer">Pefer not to answer</option>
+                  </select>
+                </div>
+
+          <button type="join">Join</button>
+            
+              </form>
+          </main>
+        </div>
       </section>
 
       <!-- About -->
       <section id="about" class="alternate-background">
+        
         <h2>About</h2>
-        <img
+        <div>
+        <img id="love"
           src="images/sunset-with-heart.png"
           alt="ThinkfulCupid - Sunset with heart"
         />
-        <img
+        <img 
           src="images/two-people-sunset-candles.png"
           alt="ThinkfulCupid - Two people with sunset and candles"
         />
@@ -58,11 +104,16 @@
           tristique vestibulum. In hac habitasse platea dictumst. Vestibulum sit
           amet pretium quam.
         </p>
+      </div>
       </section>
 
       <!-- Download -->
       <section id="download">
+        <div>
+          <div>
         <h2>Download the App</h2>
+        
+          
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
           molestie in est id efficitur. Sed hendrerit ut turpis quis dapibus.
@@ -80,14 +131,17 @@
             hendrerit mauris.
           </li>
         </ul>
+            </div>
 
         <img src="images/download.png" alt="Thinkfulbnb - download" />
+      </div>
       </section>
 
       <!-- Blog -->
       <section id="blog" class="alternate-background">
         <h2>Blog</h2>
-
+      <div class="container">
+        <div class="item">
         <img src="images/blog-post-1.png" alt="Thinkfulbnb - blog post 1" />
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
         <p>
@@ -96,7 +150,8 @@
           dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
           dapibus neque, sed vehicula neque tristique vestibulum.
         </p>
-
+        </div>
+        <div class="item">
         <img src="images/blog-post-2.png" alt="Thinkfulbnb - blog post 2" />
         <h3>Mauris eget nisl quis metus ultrices venenatis</h3>
         <p>
@@ -105,7 +160,10 @@
           dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
           dapibus neque, sed vehicula neque tristique vestibulum.
         </p>
-
+      </div>
+        </div>
+      <div class="container">
+        <div class="item">
         <img src="images/blog-post-3.png" alt="Thinkfulbnb - blog post 3" />
         <h3>
           Fusce augue diam, sollicitudin at metus id, congue placerat neque
@@ -116,7 +174,8 @@
           dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
           dapibus neque, sed vehicula neque tristique vestibulum.
         </p>
-
+      </div>
+        <div class="item">
         <img src="images/blog-post-4.png" alt="Thinkfulbnb - blog post 4" />
         <h3>Aenean purus dui, aliquam vitae auctor vel</h3>
         <p>
@@ -125,6 +184,9 @@
           dolor quam, mattis at nibh sed, tincidunt malesuada turpis. Nam dictum
           dapibus neque, sed vehicula neque tristique vestibulum.
         </p>
+      </div>
+    </div>
+      
       </section>
     </main>
 
