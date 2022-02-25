@@ -10,7 +10,7 @@ The UX designer provided you with the following user interface mockups:
 
 ### Mobile view
 
-![](images/ThinkfulCupid-mobile.png)
+![](images/ThinkfulCupid-mobilet .png)
 
 ### Desktop view
 
