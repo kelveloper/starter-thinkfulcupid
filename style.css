@@ -1,6 +1,28 @@
-/* use hastags '#' for id's and classes */
-/* -------  General Styles ------- */
+/* Mobile First*/
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
 
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+#menu {
+  flex-direction: row;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-around;
+}
+#menu li a  {
+  text-align: center;
+}
+
+/* -------  General Styles ------- */
 body {
   font-family: "Lato", sans-serif;
   color: #6b1a22;
@@ -11,14 +33,15 @@ h2 {
   font-weight: 400;
   margin: 0 10px 15px 10px;
   text-align: center;
-  padding: 25px;
 }
 
 h3 {
   font-size: 18px;
   font-weight: 500;
 }
-
+#join {
+  text-align: center;
+}
 p {
   line-height: 1.5em;
   margin: 0;
@@ -26,55 +49,6 @@ p {
 
 section {
   padding: 20px;
-}
-#about div {
-  display: flex;
-  flex-direction: row;
-}
-#about div img {
-  margin: 5px;
-  max-width: 25%;
-  height: 200px;
-}
-section #love {
-  padding-bottom: 10px;
-} 
-
-#join div {
-  display: flex;
-  flex-direction: row;
-  
-}
-#join img {
-  margin: 5px;
-  max-width: 50%;
-  justify-content: center;
-}
-#join main {
-  justify-content: flex-end;
-}
-#download {
-  padding: 20px;
-  margin-bottom: 30px;
-}
-
-#download div div{
-  justify-content: center;
-  flex-direction: column;
-}
-#download div {
-  display: flex;
-  flex-direction: row;
-  
-}
-#download div img {
-  margin: 5px;
-  max-width: 50%;
-  justify-content: center;
-  
-}
-#join {
-  text-align: center;
 }
 
 section.alternate-background {
@@ -110,16 +84,6 @@ header {
   text-align: center;
 }
 
-header div {
-  display: flex;
-  justify-content: flex-start;
-}
-nav #menu {
-  display: flex;
-  justify-content: flex-end;
-  text-indent: 50px;
-}
-
 .logo {
   font-family: "Tangerine", cursive;
   font-size: 72px;
@@ -133,6 +97,7 @@ header nav ul li {
 header nav ul li a {
   color: #ecdbc9;
   text-decoration: none;
+  padding: 0 20px 0 0;
 }
 
 header nav ul li a:hover {
@@ -141,15 +106,13 @@ header nav ul li a:hover {
 }
 
 /* -------  Join Form ------- */
+form div {
+  display: flex;
+  justify-content: space-between;
+}
 form {
   border: 2px solid #6b1a22;
   padding: 10px;
-  margin-bottom: 20px;
-}
-
-form div{
-  display: flex;
-  justify-content: space-between;
 }
 
 form label {
@@ -182,52 +145,84 @@ footer p {
   text-align: center;
   padding: 20px;
 }
-
-/* -------  Media Query ------- */
-
-/* Mobile First*/
-.group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 100px;
-}
-
-.item-double {
-  flex: 2;
-  margin: 10px;
-}
-#menu {
-  flex-direction: row;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  justify-content: space-around;
-}
-#menu li a  {
-  text-align: center;
-}
-/* Desktop First*/
-@media all and (min-width: 800px) {
-  section,
-  h1 {
-    padding: 0 10%;
-  }
-
-  .group {
-    flex-direction: row;
-  }
-}
 /* 2X2 Grid */
+
 .container {
+  flex-direction: column;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .item {
-  width: 32%;
-  padding-bottom: 32%; /* Same as width, sets height */
+  padding: 32px; /* Same as width, sets height */  
   margin-bottom: 2%; /* (100-32*3)/2 */
   position: relative;
 }
+
+/* -------  Media Query ------- */
+
+/* Desktop First*/
+
+@media all and (min-width: 800px) {
+  #loveSign{
+    width: 65%;
+  }
+  section,
+  h1 {
+    padding: 0 2%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 35px;
+  }
+  .container {
+  flex-direction: row;
+}
+#join {
+  text-align: center;
+  display: flex;
+  padding: 4%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main img {
+  width: 60%;
+}
+#aboutDiv {
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+  align-items: center;
+}
+.love {
+  width : 23%
+}
+#aboutP{
+  width: 45%;
+}
+#downloadDiv {
+  display: flex;
+  padding: 3%;
+  align-items: center;
+}
+#downloadPic {
+  width: 50%
+}
+#blogPic{
+  width: 100%;
+}
+}
+
+
+
+
