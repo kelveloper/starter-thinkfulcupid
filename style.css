@@ -18,7 +18,7 @@
   width: 100%;
   justify-content: space-around;
 }
-#menu li a  {
+#menu li a {
   text-align: center;
 }
 
@@ -116,6 +116,7 @@ form {
 }
 
 form label {
+  text-align: left;
   font-weight: bold;
 }
 
@@ -155,7 +156,7 @@ footer p {
 }
 
 .item {
-  padding: 32px; /* Same as width, sets height */  
+  padding: 32px; /* Same as width, sets height */
   margin-bottom: 2%; /* (100-32*3)/2 */
   position: relative;
 }
@@ -164,8 +165,8 @@ footer p {
 
 /* Desktop First*/
 
-@media all and (min-width: 800px) {
-  #loveSign{
+@media all and (min-width: 480px) {
+  #loveSign {
     width: 65%;
   }
   section,
@@ -186,43 +187,39 @@ footer p {
     font-size: 35px;
   }
   .container {
-  flex-direction: row;
+    flex-direction: row;
+  }
+  #join {
+    text-align: center;
+    display: flex;
+    padding: 4%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  main img {
+    width: 60%;
+  }
+  #aboutDiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 3%;
+    align-items: center;
+  }
+  .love {
+    width: 23%;
+  }
+  #aboutP {
+    width: 45%;
+  }
+  #downloadDiv {
+    display: flex;
+    padding: 3%;
+    align-items: center;
+  }
+  #downloadPic {
+    width: 50%;
+  }
+  #blogPic {
+    width: 100%;
+  }
 }
-#join {
-  text-align: center;
-  display: flex;
-  padding: 4%;
-  justify-content: space-evenly;
-  align-items: center;
-}
-main img {
-  width: 60%;
-}
-#aboutDiv {
-  display: flex;
-  justify-content: space-around;
-  padding: 3%;
-  align-items: center;
-}
-.love {
-  width : 23%
-}
-#aboutP{
-  width: 45%;
-}
-#downloadDiv {
-  display: flex;
-  padding: 3%;
-  align-items: center;
-}
-#downloadPic {
-  width: 50%
-}
-#blogPic{
-  width: 100%;
-}
-}
-
-
-
-
